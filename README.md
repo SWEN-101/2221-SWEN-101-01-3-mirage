@@ -8,7 +8,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - MEMBER01
 - Swapnil Acharjee
 - Ryan Garvin
-- MEMBER04
+- Ian Fanfair
 - Will Greenwood
 
 ## Prerequisites  <_add anything else that applies_>
