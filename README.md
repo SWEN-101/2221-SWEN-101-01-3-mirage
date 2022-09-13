@@ -9,7 +9,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 - Swapnil Acharjee
 - MEMBER03
 - MEMBER04
-
+- Will Greenwood
 
 ## Prerequisites  <_add anything else that applies_>
 
