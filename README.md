@@ -5,7 +5,7 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
   
 ## Team 
 <_each team member clones repo and then edits/replace with their name below_>
-- MEMBER01
+- Sidney Duverneau
 - Swapnil Acharjee
 - Ryan Garvin
 - Ian Fanfair
