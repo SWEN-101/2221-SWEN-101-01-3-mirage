@@ -1,23 +1,105 @@
 <html>
-    <title>Recycle Tracker</title>
-    <link rel="stylesheet" href="css/RecycleTracker.css">
-    <div  id="Header">
-        <h1>Recycle Rush</h1>
-        
-    </div>
+    <head>
+        <link rel="icon" type="image" href="/assets/gCoin.png">
+        <link rel="stylesheet" href="/css/main.css">
+        <script src="/js/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 
-    <div id="MainPage">
-        <center> <h2>Energy Usage</h2> </center> 
-
-        <div id="Categories">
-            <h2>Categories</h2>
+        <div id="header-bar">
+            <div class="left">
+                <div id="menu-button" class="nav-bar-item" onclick="myFunction(this)">
+                    <div id="bar1"></div>
+                    <div id="bar2"></div>
+                    <div id="bar3"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="box-btn nav-bar-item">
+                    <img class="ico" src="/assets/gCoin.png">
+                    <div class="text">Green Coins™</div>
+                </div>
+                <div class="box-btn nav-bar-item">
+                    <img class="ico" src="/assets/acc.png">
+                    <div class="text">Account</div>
+                </div>
+            </div>
+            <div class="center">
+                <h1 id="title" class="center, nav-bar-item">Recycle Rush</div>
+            </div>
         </div>
 
-        <div id="Upload">
-            <h2>Provide A File Containing your Electricity, Gas, or Water Usage</h2>  
-         </div>
+        <div class="RecycleTracker">
+           <center><h1>Recycling Tracker</h1></center>
+            <div id="Categories">
+                <div class="white_curved_boarder">
+                    <center><h2>Categories</h2></center>
+                    <center><div class="table_wrap">
+                        <table>
+                            <tr>
+                             
+                                 <div id="PaperRecycling">
+                                     <center><h3>Paper Recycling:</h3></center>
+                                     <center><h3>Up by 32%</h3></center>
+                                     <center><img class="ico" src="/assets/PaperIcon.png"></center>
+                 
+                                 </div> 
+                         
+                            </tr> 
+     
+                            <tr>
+                                 <div id="PaperRecycling">
+                                     <center><h3>Plastic Recycling:</h3></center>
+                                     <center><h3>Down by 2%</h3></center>
+                                     <center><img class="ico" src="/assets/bottleicon.png"></center>
+     
+                                 </div>
+                         
+                            </tr>
+                            
+                            <tr>
+                        
+                                 <div id="PaperRecycling">
+                                     <center><h3>Glass Recycling:</h3></center>
+                                     <center><h3>Up by 0%</h3></center>
+                                     <center><img class="ico" src="/assets/glassicon.png"></center>
+                 
+                                 </div>
+                 
+                            </tr>
+                         </table>
+                    </div>
+                  
+                    
+                </div>
+    
+            </div>
+            
+            <div id="Upload">
+                <div class="white_curved_boarder">
+                    <center><h2>Provide  A Photo of Recycled Item</h2> </center>
+                    
+                    <div id="ClickToInsertPhoto">
+                        <center><img class="ico" src="/assets/cloudicon.png"></center>
+                        <center><h3>Click To Insert A Photo</h3></center>
+                        
+                        <div id="ImportPhoto">
+                            <center><h3>Import Photo</h3></center> 
+        
+                        </div>
+                        
+    
+                    </div> 
+                    <h4>Maximum upload file size: 128 MB</h4>
+                </div>
 
-    </div>
+
+            </div>
 
 
+
+        </div>
+    
 </html>

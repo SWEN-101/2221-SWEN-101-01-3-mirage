@@ -81,3 +81,85 @@
 .ico {
     width: 50px;  
 }
+
+
+/* recycle tracker page  */
+
+.RecycleTracker{
+    background: gray;
+    border-radius: 0px;
+    padding: 20px;
+    height: 750px;
+    width: auto;
+    transform: translate(0%, 20%);
+    font-family: "Titillium Web", sans-serif;
+}
+
+#Categories{
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    transform: translate(30%, 10%);
+     
+}
+
+#Upload{
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    transform: translate(220%, 16%);
+}
+
+
+#PaperRecycling{
+    border-radius: 25px;
+    background:grey;
+    border: 2px solid black;
+    padding: 20px;
+    height: auto;
+    width: auto;
+ 
+    
+}
+
+#ClickToInsertPhoto{
+    border-radius: 25px;
+    background:grey;
+    border: 2px solid black;
+    padding: 20px;
+    height: auto;
+    width: auto;
+}
+
+#ImportPhoto{
+    border-radius: 25px;
+    background:rgb(32, 178, 95);;
+    border: 2px solid black;
+    padding: 20px;
+    height: auto;
+    width: auto;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+
+.white_curved_boarder{
+    border-radius: 25px;
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    height: auto;
+    width: 475px;
+
+
+} 
+
+.table_wrap {
+    height: 400px;
+    width: 400px;
+    overflow-y: scroll;
+    display: inline-block;
+    
+}
+
