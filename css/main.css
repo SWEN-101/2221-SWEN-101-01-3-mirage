@@ -1,19 +1,19 @@
 #header-bar {
-    height: 15%;
+    height: 116px;
     width: 100%;
     top: 0;
     left: 0;
     position: fixed;
     background-color:rgb(32, 178, 95);
     vertical-align: middle;
-    overflow: hidden;
 }
 
 #title {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
-    font-size: 500%;
+    font-size: 400%;
     color:white;
+    padding-left: 20%;
 }
 
 .box-btn {
@@ -41,6 +41,7 @@
   
 .change #bar2 {
     opacity: 0;
+    
 }
 
 .change #bar3 {
@@ -50,7 +51,9 @@
 #menu-button {
     cursor: pointer;
     width: 40px;
-    margin: 32px 16px;
+    margin: 40px 0px 0px 40px;
+    padding: 8px 16px;
+    display: inline-block;
 }
 
 .nav-bar-item {
@@ -59,19 +62,22 @@
 }
 
 .left {
-    float: left !important;
+    float: left;
+    height: 100%;
+    width: auto;
 }
 
 .right {
     float: right !important;
+    height: 100%;
+    width: auto;
 }
 
 .center {
     float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 100%;
+    width: auto;
 }
 
 .box-btn .text {
@@ -81,3 +87,56 @@
 .ico {
     width: 50px;  
 }
+
+#overlay-menu {
+    transition: 0.4s;
+    height: 100%;
+    background-color: rgb(190, 188, 188);
+    width: 0;
+    height: 700%;
+    position: absolute;
+}
+
+.change #overlay-menu {
+    width: 30%;
+}
+
+.menu-content li {
+    font-family: "Titillium Web", sans-serif;
+    font-size: large;
+    color: white;
+    list-style: none;
+    margin: 8px;
+    visibility: hidden;
+}
+
+.change .menu-content li {
+    visibility: visible;
+}
+
+#page {
+    margin-top: 116px;
+}
+
+#page h1 {
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 500%;
+    opacity: 50%;
+}
+
+#menu-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    visibility: hidden;
+    display: inline-block;
+    position: top;
+    transform: translateY(-15px);
+}
+
+.change #menu-title {
+    visibility: visible;
+}
+

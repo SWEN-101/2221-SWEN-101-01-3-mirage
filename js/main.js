@@ -1,3 +1,3 @@
-function myFunction(x) {
-    x.classList.toggle("change");
+function toggleMenu() {
+  document.getElementsByClassName("left").item(0).classList.toggle('change')
   }
