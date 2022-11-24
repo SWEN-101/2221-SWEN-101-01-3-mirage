@@ -139,4 +139,80 @@
 .change #menu-title {
     visibility: visible;
 }
+/* recycle tracker and energy usage css  */
+
+.RecycleTracker {
+    background: gray;
+    border-radius: 0px;
+    padding: 20px;
+    height: 725px;
+    width: auto;
+    transform: translate(0%, 22%);
+    font-family: "Titillium Web", sans-serif;
+    font-size: 120%;
+}
+
+#Categories{
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    transform: translate(25%, 0%);
+    
+     
+}
+
+#Upload{
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    transform: translate(125%, -2%);
+}
+
+
+#GreyBar{
+    border-radius: 25px;
+    background:grey;
+    border: 2px solid black;
+    padding: 20px;
+    height: auto;
+    width: 600px;
+ 
+    
+}
+
+#ClickToInsertPhoto{
+    border-radius: 25px;
+    background:grey;
+    border: 2px solid black;
+    padding: 20px;
+    height: 300px;
+    width: 700px;
+    transform: translate(0%, -5%);
+}
+
+#ImportPhoto{
+    border-radius: 25px;
+    background:rgb(32, 178, 95);;
+    border: 2px solid black;
+    padding: 20px;
+    height: 100px;
+    width: auto;
+}
+
+.white_curved_boarder{
+    border-radius: 25px;
+    background: white;
+    border: 2px solid black;
+    padding: 20px;
+    height: 550px;
+    width: fit-content;
+
+
+} 
+
+.table_wrap {
+    height: 425px;
+    width: fit-content;
+    overflow-y: scroll;
+    display: inline-block;
+    
+}
 
