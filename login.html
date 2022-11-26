@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
     <!--Bootstrap reference-->
 
     <!-- Latest compiled and minified CSS -->
@@ -21,7 +22,7 @@
     <meta charset="utf-8">
 
   </head>
-  <body class="main-color">
+  <body class="main-color" onload="hide_login_creation()">
     <div class="container-fluid">
       <div class="row bg-success">
         <div class="col"></div>
@@ -45,7 +46,18 @@
           <label for="pwd">Password:</label>
           <input type="password" class="form-control" id="pwd">
         </div>
-        <p class="pl-5 text-primary">create account</p>
+        <div>
+          <button type="button" class="btn btn-primary">Create Account</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+        <div class="form-group pt-3" id="create_username">
+          <label for="usr">Create Username:</label>
+          <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group" id="create_password">
+          <label for="pwd">Create Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
       </div>
       <div class="col"></div>
     </div>
