@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
     <!--Bootstrap reference-->
 
     <!-- Latest compiled and minified CSS -->
@@ -21,7 +22,7 @@
     <meta charset="utf-8">
 
   </head>
-  <body class="main-color">
+  <body class="main-color" onload="hide_login_creation()">
     <div class="container-fluid">
       <div class="row bg-success">
         <div class="col"></div>
@@ -39,13 +40,25 @@
       <div class="col-md-">
         <div class="form-group">
           <label for="usr">Username:</label>
-          <input type="text" class="form-control" id="usr">
+          <input type="text" class="form-control" id="usr" maxlength="32">
         </div>
         <div class="form-group">
           <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd">
+          <input type="password" class="form-control" id="pwd" maxlength="32">
         </div>
-        <p class="pl-5 text-primary">create account</p>
+        <div>
+          <button onclick="show_login_creation()" type="button" class="btn btn-primary">Create Account</button>
+          <button onclick="login()" type="button" class="btn btn-primary">Login</button>
+        </div>
+        <div class="form-group pt-3" id="create_username">
+          <label for="usr">Create Username:</label>
+          <input type="text" class="form-control" id="new_usr" maxlength="32">
+        </div>
+        <div class="form-group" id="create_password">
+          <label for="pwd">Create Password:</label>
+          <input type="password" class="form-control" id="new_pwd" maxlength="32">
+        </div>
+        <button onclick="submit_credentials()" id="submit" type="button" class="btn btn-primary">Submit</button>
       </div>
       <div class="col"></div>
     </div>
