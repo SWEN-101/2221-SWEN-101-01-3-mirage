@@ -297,6 +297,16 @@ td div {
     height: 30px;
 }
 
+.button #text{
+    align-items: center;
+
+}
+
+.button .ico {
+    height: inherit;
+    width: auto;
+}
+
 .TileRow #GreyBar{
     width: 30vw;
 }
