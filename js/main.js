@@ -2,9 +2,8 @@ function toggleMenu() {
   document.getElementsByClassName("left").item(0).classList.toggle('change')
 }
 
-function includeHTML(file) {
-  var elmnt, xhttp;
-  elmnt = document.getElementById("media-screen");
+function includeHTML(elmnt, file) {
+  var xhttp;
   if (file) {
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
