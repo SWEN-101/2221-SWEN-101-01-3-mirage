@@ -8,28 +8,43 @@
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
-        <div id="header-bar">
-            <div class="left">
-                <div id="menu-button" class="nav-bar-item" onclick="myFunction(this)">
+    <header id="header-bar">
+        <div class="left">
+            <div id="overlay-menu" class="">
+                <div id="menu-button" class="" onclick="toggleMenu()">
                     <div id="bar1"></div>
                     <div id="bar2"></div>
                     <div id="bar3"></div>
                 </div>
-            </div>
-            <div class="right">
-                <div class="box-btn nav-bar-item">
-                    <img class="ico" src="assets/gCoin.png">
-                    <div class="text">Green Coins™</div>
-                </div>
-                <div class="box-btn nav-bar-item">
-                    <img class="ico" src="assets/acc.png">
-                    <div class="text">Account</div>
-                </div>
-            </div>
-            <div class="center">
-                <h1 id="title" class="center, nav-bar-item">Recycle Rush</div>
+                <div id="menu-title">Menu</div>
+                <ul class="menu-content">
+                    <li><a href="RecycleTracker.html">Recycling Tracker</a></li>
+                    <li><a href="EnergyUsage.html">Energy Usage</a></li>
+                    <li><a href="EmissionsTracker.html">Emissions Tracker</a></li>
+                    <li><a href="donation.html">Donations</a></li>
+                    <li><a href="partnershipDashboard.html">Partnership Dashboard</a></li>
+                    <li><a href="pointStore.html">Point Store</a></li>
+                </ul>
             </div>
         </div>
+        <div class="right">
+            <div class="box-btn nav-bar-item">
+                <a href="pointStore.html">
+                    <img class="ico" src="assets/gCoin.png">
+                    <div class="text">Green Coins™</div>
+                </a>
+            </div>
+            <div class="box-btn nav-bar-item">
+                <a href="login.html">
+                    <img class="ico" src="assets/acc.png">
+                    <div class="text">Account</div>
+                </a>
+            </div>
+        </div>
+        <div class="center">
+            <div id="title" class="center, nav-bar-item"><a href="index.html">Recycle Rush</a></div>
+        </div>
+    </header>
 
         <div class="RecycleTracker">
            <center><h1>Recycling Tracker</h1></center>
