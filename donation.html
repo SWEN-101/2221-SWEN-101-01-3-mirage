@@ -3,6 +3,13 @@
     <head>
         <link rel="stylesheet" href="css/donation.css">
         <script src="js/donation.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="icon" type="image" href="assets/gCoin.png">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
         <!--Bootstrap reference-->
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -21,56 +28,101 @@
         <meta charset="utf-8">
     </head>
     <body class="main-color">
-        <!--Recycle Rush Header-->
-        <div class="container-fluid">
-            <div class="row bg-success">
-            <div class="col"></div>
-            <div class="col-md-"><h1 class="pt-3">Recycle Rush<img src="assets/bottleicon.png" width="50" height="50" alt="bottles"></h1></div>
-            <div class="col pr-5 pt-1 text-right"><img src="assets/gCoin.png" width="50" height="50" alt="gCoin"><h5 id="g_coin">10000</h5></div>
-        </div>
-        <!--Title-->
-        <div class="row pt-5">
-            <div class="col"></div>
-            <div class="col-md-"><h3>Donations<img src="assets/lightbulbicon.png" width="40" height="40" alt="account icon"></h3></div>
-            <div class="col"></div>
-        </div>
-        <!--Water Project-->
-        <div class="row pt-3">
-            <div class="pl-5 col-md-">
-                <h5 class="text-center">Water Project Goal: 100,000</h5>
-                <img src="assets/The_Water_Project_Logo.png" width="500" height="300" alt="water project">
-                <div class="row pt-2">
-                    <div class="col"><p id="water_current" class="pt-2 text-center">Current: 0</p></div>
-                    <div class="col-md- pr-3"><button onclick="donation('water',100,'water_current')" type="button" class="btn btn-primary">Donate 100<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button> <button onclick="donation('water',1000,'water_current')" type="button" class="btn btn-primary">Donate 1000<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button></div>
-                </div>
-                <div class="progress">
-                    <div id="water" class="progress-bar" style="width:0%"></div>
+        <header id="header-bar">
+            <div class="left">
+                <div id="overlay-menu" class="">
+                    <div id="menu-button" class="" onclick="toggleMenu()">
+                        <div id="bar1"></div>
+                        <div id="bar2"></div>
+                        <div id="bar3"></div>
+                    </div>
+                    <div id="menu-title">Menu</div>
+                    <ul class="menu-content">
+                        <li><a href="RecycleTracker.html">Recycling Tracker</a></li>
+                        <li><a href="EnergyUsage.html">Energy Usage</a></li>
+                        <li><a href="EmissionsTracker.html">Emissions Tracker</a></li>
+                        <li><a href="donation.html">Donations</a></li>
+                        <li><a href="partnershipDashboard.html">Partnership Dashboard</a></li>
+                        <li><a href="pointStore.html">Point Store</a></li>
+                        <li><a href="">Point System</a></li>
+                        <li><a href="">Incentives</a></li>
+                    </ul>
                 </div>
             </div>
-            <!--Red Cross-->
-            <div class=" pl-5 col-md-">
-                <h5 class="text-center pr-4">Red Cross Goal: 100,000</h5>
-                <img src="assets/red_cross_logo.jpg" width="500" height="300" alt="red cross logo">
-                <div class="row pt-2">
-                    <div class="col"><p id="cross_current" class="pt-2 text-center">Current: 0</p></div>
-                    <div class="col-md- pr-3"><button onclick="donation('cross',100,'cross_current')" type="button" class="btn btn-primary">Donate 100<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button> <button onclick="donation('cross',1000,'cross_current')" type="button" class="btn btn-primary">Donate 1000<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button></div>
+            <div class="right">
+                <div class="box-btn nav-bar-item">
+                    <a href="pointStore.html">
+                        <img class="ico" src="assets/gCoin.png">
+                        <div class="text">Green Coins™</div>
+                    </a>
                 </div>
-                <div class="progress">
-                    <div id="cross" class="progress-bar" style="width:0%"></div>
-                </div>
-            </div>
-            <!--Saint Baldrick's-->
-            <div class="pl-5 col-md-">
-                <h5 class="text-center pl-5">Saint Baldrick's Goal: 100,000</h5>
-                <img src="assets/St_Baldrick's_Foundation_Logo.png" width="500" height="300" alt="Baldrick Foundation">
-                <div class="row pt-2">
-                    <div class="col"><p id="saint_current" class="pt-2 text-center">Current: 0</p></div>
-                    <div class="col-md- pr-3"><button onclick="donation('saint',100,'saint_current')" type="button" class="btn btn-primary">Donate 100<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button> <button onclick="donation('saint',1000,'saint_current')" type="button" class="btn btn-primary">Donate 1000<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button></div>
-                </div>
-                <div class="progress">
-                    <div id="saint" class="progress-bar" style="width:0%"></div>
+                <div class="box-btn nav-bar-item">
+                    <a href="login.html">
+                        <img class="ico" src="assets/acc.png">
+                        <div class="text">Account</div>
+                    </a>
                 </div>
             </div>
-        </div>
+            <div class="center">
+                <div id="title" class="center, nav-bar-item"><a href="index.html">Recycle Rush</a></div>
+            </div>
+        </header>
     </body>
 </html>
+                <!--Title-->
+                <div class="row pt-5">
+                    <div class="col"></div>
+                    <div class="col-md-"><h3>Donations<img src="assets/lightbulbicon.png" width="40" height="40" alt="account icon"></h3></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col"></div>
+                    <div class="col-md- pr-5"><h3>Donations<img src="assets/lightbulbicon.png" width="40" height="40" alt="account icon"></h3></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col"></div>
+                    <div class="col-md- pr-5"><img src="assets/gCoin.png" width="50" height="50" alt="gCoin">
+                        <h5 id="g_coin">10000</h5></div>
+                    <div class="col pt-3 pr-5"></div>
+                </div>
+                <!--Water Project-->
+                <div class="row pt-3">
+                    <div class="pl-5 col-md-">
+                        <h5 class="text-center">Water Project Goal: 100,000</h5>
+                        <img src="assets/The_Water_Project_Logo.png" width="500" height="300" alt="water project">
+                        <div class="row pt-2">
+                            <div class="col"><p id="water_current" class="pt-2 text-center">Current: 0</p></div>
+                            <div class="col-md- pr-3"><button onclick="donation('water',100,'water_current')" type="button" class="btn btn-primary">Donate 100<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button> <button onclick="donation('water',1000,'water_current')" type="button" class="btn btn-primary">Donate 1000<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button></div>
+                        </div>
+                        <div class="progress">
+                            <div id="water" class="progress-bar" style="width:0%"></div>
+                        </div>
+                    </div>
+                    <!--Red Cross-->
+                    <div class=" pl-5 col-md-">
+                        <h5 class="text-center pr-4">Red Cross Goal: 100,000</h5>
+                        <img src="assets/red_cross_logo.jpg" width="500" height="300" alt="red cross logo">
+                        <div class="row pt-2">
+                            <div class="col"><p id="cross_current" class="pt-2 text-center">Current: 0</p></div>
+                            <div class="col-md- pr-3"><button onclick="donation('cross',100,'cross_current')" type="button" class="btn btn-primary">Donate 100<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button> <button onclick="donation('cross',1000,'cross_current')" type="button" class="btn btn-primary">Donate 1000<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button></div>
+                        </div>
+                        <div class="progress">
+                            <div id="cross" class="progress-bar" style="width:0%"></div>
+                        </div>
+                    </div>
+                    <!--Saint Baldrick's-->
+                    <div class="pl-5 col-md-">
+                        <h5 class="text-center pl-5">Saint Baldrick's Goal: 100,000</h5>
+                        <img src="assets/St_Baldrick's_Foundation_Logo.png" width="500" height="300" alt="Baldrick Foundation">
+                        <div class="row pt-2">
+                            <div class="col"><p id="saint_current" class="pt-2 text-center">Current: 0</p></div>
+                            <div class="col-md- pr-3"><button onclick="donation('saint',100,'saint_current')" type="button" class="btn btn-primary">Donate 100<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button> <button onclick="donation('saint',1000,'saint_current')" type="button" class="btn btn-primary">Donate 1000<img src="assets/gCoin.png" width="20" height="20" alt="gCoin"></button></div>
+                        </div>
+                        <div class="progress">
+                            <div id="saint" class="progress-bar" style="width:0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+        </html>
