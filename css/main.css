@@ -174,7 +174,7 @@ table {
     height: 100%;
 }
 
-td div {
+.boxy {
     width: 95%;
     padding: 100px 0px;
     border-radius: 50px;
