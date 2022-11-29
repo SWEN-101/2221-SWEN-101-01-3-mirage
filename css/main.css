@@ -108,6 +108,9 @@
     list-style: none;
     margin: 8px;
     visibility: hidden;
+}
+
+.menu-content a {
     text-decoration: none;
 }
 
