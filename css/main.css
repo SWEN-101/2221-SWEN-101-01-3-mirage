@@ -270,3 +270,20 @@ td div {
     
 }
 
+
+.ImgTile img {
+    width: inherit;
+}
+
+.button {
+    color: #fff;
+    background-color: #007bff;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+.TileRow #GreyBar{
+    width: 30vw;
+}
