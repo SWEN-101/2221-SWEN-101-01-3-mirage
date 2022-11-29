@@ -14,15 +14,11 @@ An online E-store system built in github.io .. etc. <_replace with other platfor
 ## Prerequisites  <_add anything else that applies_>
 
 - github accounts and basic github.io knowledge
--
--
 
 ## How to access it or run it  <_add when applicable_>
 
 1. Clone the repository and go to the root directory.
-2.  
-3.  
-4.  
+2. You can also view the deployment in github.io
 
 ## Known bugs and disclaimers
 (It may be the case that your implementation is not perfect...)
@@ -31,12 +27,29 @@ Document any known bug or nuisance.
 If any shortcomings, make clear what these are and where they are located.
 
 ## Link or full list of requirements
- <_you could linkto the specific private board where your backlog is kept_>
+Account System
+-multiple users
 
+Point System
+-Reward user
 
+Recycling Tracker
+-Track statistics
+
+Energy use tracker
+-Track statistics
+
+Emissions Tracker
+-Track statistics
+
+Incentive Programs
+-use for saving points
+
+Donation System
+-Help the community
+
+Partnership Integration
+-Companies to contribute
 
 ## License
-
-<_replace with the type of license you will use for the project_> e.g. MIT License
-
-See LICENSE for details.
+Commercial or proprietary
