@@ -12,7 +12,7 @@ function donation(charity,value,current)
     //g_coin reduction
     total = document.getElementById("g_coin").innerHTML;
     total = parseInt(total);
-    if(total <= 0)
+    if(total <= 0 || total - value <= 0)
     {
         return
     }
