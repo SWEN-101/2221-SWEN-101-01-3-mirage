@@ -114,6 +114,11 @@
     visibility: visible;
 }
 
+.menu-content li :hover {
+    color:rgb(32, 178, 95);
+    text-decoration: none;
+}
+
 #page {
     margin-top: 116px;
 }
