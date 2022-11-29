@@ -115,6 +115,11 @@
     color: inherit;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .change .menu-content li {
     visibility: visible;
 }
@@ -139,6 +144,14 @@
     font-family: "Titillium Web", sans-serif;
     font-size: 250%;
     opacity: 50%;
+}
+
+p {
+    width: 50%;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 100%;
+    color: rgb(32, 178, 95);
 }
 
 #menu-title {
