@@ -108,6 +108,7 @@
     list-style: none;
     margin: 8px;
     visibility: hidden;
+    text-decoration: none;
 }
 
 .change .menu-content li {
@@ -116,7 +117,6 @@
 
 .menu-content li :hover {
     color:rgb(32, 178, 95);
-    text-decoration: none;
 }
 
 #page {
